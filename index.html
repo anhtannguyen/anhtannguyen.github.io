@@ -24,18 +24,23 @@
             background-color:var(--pink-color1);
         }        
         /* đầu trang */
+        .headercodinh{
+            position:fixed;
+            top:0;
+            left:0;
+            right:0;
+        }
         .header{
             background-color:var(--pink-color1);
-            position:none;
             color:black;
-            padding:60;
+            padding:10vh;
             text-align:center;
-            font-size:30;
+            font-size:2em;
         }
         .navbar {
         overflow: hidden;
         background-color:rgba(202, 202, 202, 0.575);
-        border:2px solid white;
+        border:3px solid black;
         }
         .navbar a {
         border:2px solid black;
@@ -57,65 +62,64 @@
         }
         /* nút chọn của anime,nhạc,ảnh */
         button{
-            font-size:1.5rem;
-            width:25rem;
-            height:10rem;
+            font-size:2rem;
+            width:35vw;
+            height:25vh;
             outline:auto;
             background-color:rgba(202, 202, 202, 0.575);
-            border: 1px solid var(--pink-color);
-            padding:0;
+            border: 2px solid var(--pink-color);
             box-sizing:border-box;/* Border-box=context+padding+border */
             cursor: pointer;
-            transition: 0.2s;/* thời gian chuyển động hiệu ứng */
+            transition: 0.4s;/* thời gian chuyển động hiệu ứng */
         }
         /* :hover là chức năng chuyển đổi của Transition */
         button:hover {
             background-color:orange;
         }
-        /* anh123 là phần canh chỉnh khung của link anime.nhạc,ảnh */
-        .the123{
-            padding-top:10vh;
+        .the12,.the34{
             display:flex;
-            justify-content:space-evenly;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
         }
-        .the456{
-            padding-top:10vh;
-            display:flex;
-            justify-content:space-evenly;
-        } 
+        form{
+            margin:2em;
+        }
+        .the12{
+            margin-top:18em;
+        }
+        /* anh123 là phần canh chỉnh khung của link anime.nhạc,ảnh */
     </style>
     <!-- style= tạo kiểu cho thẻ,có hiển thị-->
     <body>
-        <div class="header">
-            <h1> NGUYỄN ANH TẤN</h1>
-        </div>
-        <header></header>
-        <div class="navbar">
-            <a href="">Gmail</i></a>
-            <a href="">Youtube</a>
-            <a href="">facebook</a>
-            <a href="">About me</a>
-        </div>
-        <div>
-            <div class="the123  ">
-                <form action="https://anhtannguyen.github.io/20220702.12h.web1/" >
-                    <button>Thẻ giới thiệu</button>
-                </form>
-                <form action="https://anhtannguyen.github.io/theamnhac.github.io/">
-                    <button>Âm nhạc</button>
-                </form>       
-                <form action="C:\Users\admin\Desktop\20220506.8h.web4.html">
-                    <button>Ảnh anime</button>
-                </form>
-            </div>    
-            <div class="the456">    
-                <form action="">
-                    <button>Khoảng khắc vui vẻ</button>
-                </form>
-                <form action="">
-                    <button>Trò chơi</button>
-                </form>
+        <div class="headercodinh">
+            <div class="header">
+                <h1> NGUYỄN ANH TẤN</h1>
             </div>
+            <div class="navbar"></div>
         </div>
+            <div class="the12">
+                <div class="the1">
+                    <form action="https://anhtannguyen.github.io/20220702.12h.web1/" >
+                        <button>Thẻ giới thiệu</button>
+                    </form>
+                </div>
+                <div class="the2">
+                    <form action="https://anhtannguyen.github.io/theamnhac.github.io/">
+                        <button>Âm nhạc</button>
+                    </form>       
+                </div>
+            </div>   
+            <div class="the34"> 
+                <div class="the3">    
+                    <form action="">
+                        <button>Khoảng khắc vui vẻ</button>
+                    </form>
+                </div>
+                <div class="the4">
+                    <form action="">
+                        <button>Trò chơi</button>
+                    </form>
+                </div>
+            </div>
     </body>
-</html>
+</html>      
