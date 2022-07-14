@@ -1,129 +1,204 @@
-<html chan="en">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> Nguyễn Anh Tấn </title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="trangtru.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <title>VIETLEARNING</title>
+        <link rel="icon" href="https://i.pinimg.com/236x/3c/25/fe/3c25fe16eeba1633e6fe3fc5e12b4445.jpg" width="200px">
     </head>
-    <!-- Head= chỉ để chỉnh sửa web ko hiện thị-->
     <style>
-        /* Height = Y; Width = X */
-        /* thuộc tính chia 4 đến 1 phần:
-            4 là Top-Right-bottom-left
-            3 là Top-Right=left-bottom
-            2 là Top=bottom-Right=left
-            1 là mỗi bên nhau */
-            
         *{
             margin:0;
             padding:0;
-
+        }
+        html{
+            font-size: 40px;
         }
         body{
-            background-color:var(--pink-color1);
-        }        
-        /* đầu trang */
-        .headercodinh{
+            background-image: url(https://i.pinimg.com/564x/3c/75/7c/3c757c81f3ae2a03ea66eb783a90943d.jpg);
+            background-repeat: no-repeat;
+            background-color: rgb(31, 44, 46);
+            background-size:100%;
+            background-attachment: fixed;
+            background-position: 0 180;
+        }
+        .headerclock{
             position:fixed;
-            top:0;
-            left:0;
             right:0;
+            left: 0;
         }
-        .header{
-            background-color:var(--pink-color1);
-            color:black;
-            padding:10vh;
-            text-align:center;
-            font-size:2em;
+        header{
+            background-color: rgba(3, 42, 46, 1);
+            padding:60px;
+            outline:none;
+            border-bottom: 5px solid black;
         }
-        .navbar {
-        overflow: hidden;
-        background-color:rgba(202, 202, 202, 0.575);
-        border:3px solid black;
+        h3{
+            text-transform: uppercase;
+            text-align:  center;
+            font-size: 50px;
+            color:rgba(10,10,10,1);
         }
-        .navbar a {
-        border:2px solid black;
-        float: left;
-        display: block;
-        color:black;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-        }
-        .navbar a:hover {
-        background-color:orange;
-        color: black;
-        }
-        /* Khai báo biến toàn cục */
-        :root{
-            --pink-color:black;
-            --pink-color1:rgba(0,80,89,1);
-        }
-        /* nút chọn của anime,nhạc,ảnh */
-        button{
-            font-size:2rem;
-            width:35vw;
-            height:25vh;
-            outline:auto;
-            background-color:rgba(202, 202, 202, 0.575);
-            border: 2px solid var(--pink-color);
-            box-sizing:border-box;/* Border-box=context+padding+border */
-            cursor: pointer;
-            transition: 0.4s;/* thời gian chuyển động hiệu ứng */
-        }
-        /* :hover là chức năng chuyển đổi của Transition */
-        button:hover {
-            background-color:orange;
-        }
-        .the12,.the34{
-            display:flex;
+        .icon{
+            overflow: hidden;
+            border:0px solid white;
+            float:right;
+            width:1300;
+            align-content: center;
+            margin-top:35;
+            display: flex;
             justify-content: space-evenly;
-            flex-wrap: wrap;
         }
-        form{
-            margin:2em;
+        .img{
+            position: relative;
+            width:200px;
+            height:200px;
+            padding:83px;
         }
-        .the12{
-            margin-top:18em;
+        img{
+            width:100%;
+            height:100%;
+            box-sizing: border-box;
+            border:4px solid black;
+            border-radius:10%;
         }
-        /* anh123 là phần canh chỉnh khung của link anime.nhạc,ảnh */
+        .vietlearning{
+            width: 1500px;
+            margin-left:2cm;
+            font-size: 0.7em;
+        }
+        .vietlearninglagi{
+            padding-top:350px;
+        }
+        
+        h2{
+            margin-bottom:1cm;
+            text-decoration-line: underline;
+        }
+        p{
+            border-radius: 10px;
+            box-sizing: border-box;
+            border:2px solid black;
+            text-indent: 1cm;
+            margin-left: 1cm;
+            margin-right: 2cm;
+            margin-bottom:0.2cm;
+            padding:0.2cm;
+            transition: 1s;
+        }
+        p:hover{
+            background-color:rgba(93, 233, 198, 0.349);
+            border:2.1px solid white;
+        }
+        button{
+            box-sizing: border-box;
+            border: 4px solid black;
+            border-radius: 10px;
+            font-size:1rem;
+            width:200;
+            height:60;
+            text-align: center;
+            transition: 0.5s;
+            background-color: rgb(0,80,89);
+        }
+        button:hover{
+            background-color: rgba(50,20,20,1);
+            color: black;
+        }
+        .navar{
+            background-size: cover ;
+            background-image: url(https://i.pinimg.com/564x/3c/75/7c/3c757c81f3ae2a03ea66eb783a90943d.jpg);
+            padding:70px;
+        }
+        footer{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(3,42,46,1);
+            border-top:3px solid black;
+        }
+        .iconfooter{
+        }
+        .fa-brands{
+            cursor: pointer;
+            justify-content:center;
+            align-items:center;
+            color:black;
+            transition:0.4s;
+        }
+        .fa-brands:hover{
+            background-color:rgba(3, 42, 46, 1);
+            color:black;
+            transition: 0.1s;
+        }
     </style>
-    <!-- style= tạo kiểu cho thẻ,có hiển thị-->
     <body>
-        <div class="headercodinh">
-            <div class="header">
-                <h1> NGUYỄN ANH TẤN</h1>
+        <div class="headerclock">
+            <header>    
+                <h3>VietLearning</h3>
+            </header>
+            <div class="icon">
+                <form action>
+                    <button>Trang chủ</button>
+                </form>
+                <form action>
+                    <button>Thông tin</button>
+                </form>
+                <form action>
+                    <button>Hoạt động</button>
+                </form>
+                <form action>
+                    <button>Thú cưng</button>
+                </form>
             </div>
-            <div class="navbar"></div>
+            <div class="navar"></div>
         </div>
-            <div class="the12">
-                <div class="the1">
-                    <form action="https://anhtannguyen.github.io/20220702.12h.web1/" >
-                        <button>Thẻ giới thiệu</button>
-                    </form>
-                </div>
-                <div class="the2">
-                    <form action="https://anhtannguyen.github.io/theamnhac.github.io/">
-                        <button>Âm nhạc</button>
-                    </form>       
-                </div>
-            </div>   
-            <div class="the34"> 
-                <div class="the3">    
-                    <form action="">
-                        <button>Khoảng khắc vui vẻ</button>
-                    </form>
-                </div>
-                <div class="the4">
-                    <form action="">
-                        <button>Trò chơi</button>
-                    </form>
-                </div>
-                <div class="the5">
-                    <audio>
-                    </audio>
-                </div>
+        <div style="position:fixed" class="img">
+            <img src="https://i.pinimg.com/236x/cd/4c/8b/cd4c8ba49236d274d7089674598c1c19.jpg">
+        </div>
+        <div class="vietlearning">
+            <div class="vietlearninglagi">
+                <h2>1.VietLearning là gì ?</h2>
+                <p>VietLearning là một trung tâm công tác xã hôi với những anh chị vô cùng nhiệt tình và thân thiện với công những công việc cứu trợ thú nuôi cơ nhỡ.Đây còn là một trung tâm dạy học tiếng Anh do Ms.Duyên và Mr.Khoa dạy.Hằng tháng trung tâm sẽ tố chức các buổi kỹ năng sống hướng về mục tiêu bảo vệ môi trường.</p>
             </div>
+            <div class="cuutrodongvat">
+                <h2>2.Cứu trợ động vật cơ nhỡ.</h2>
+                <p>Trung tâm thường cứu trợ các bạn chó mèo bị bỏ rơi,bị bệnh hay không có ai người nhận nuôi.Lúc trước mình nghĩ,đây chỉ là một công việc để làm tâm mình thấy tốt hơn nhưng đến khi có một người giải thích việc làm cứu những bạn chó mèo này cao cả như nào.
+                    Đây là một câu chuyện về ý nghĩa đó.
+                    Mr.K nhặt được một bạn chó mắc carry ( bệnh này thường là sẽ chết hoặc sẽ để di chứng đông kinh ).Khi nhắc về điều mà tôi thấy đó là một chú chó lông trắng và vô yếu ớt,xung quanh chỗ nào cũng lồi xương.
+                    Nó dậy dụa,nó sợ hãi con người,nó hú lên.Chó trắng được nhắc về và qua ngày hôm sau nó đã mất.
+                    Mr.K nói rằng” Sống chết tại số mình không thể nào tránh được nhưng ít ra mình cũng đã cho nó một khoảng thời gian cuối đời êm ái và không có sự sợ hãi.Việc nó dẫy dụa,hú là nó đang sả stress căng thẳng khi trước đây nó luôn ngoài đường giữa dòng xe cộ nó sợ hãi hoảng mang.Lúc cuối đời nó có 1 nơi để nằm nghỉ,một ngồi nhà ấm áp và không có tiếng xe cộ đã là điều tốt nhất mà mình có thể làm cho nó “
+                    </p>
+            </div>
+            <div class="kynangsong">
+                <h2>3.Các chương trình kỹ năng sống.</h2>
+                <p>Tuần lễ xanh: Nuôi trồng cây xanh.
+                    Các buổi tham quan bảo tang lịch sử cho các em nhỏ.
+                    Nói không với ni-long dung 1 lần.
+                    Các khóa dạy bơi.
+                    …(vân vân và mây mây.Tại nhiều quá mình không nhớ rõ lắm)
+                    </p>
+            </div>
+            <div class="tienganh">
+                <h2>4.Dạy học tiếng Anh</h2>
+                <p>Dạy học thêm cho cả học sinh lẫn người đi làm.Hiên tại thì mình đang theo học chương trình “ English for life”.Dễ hiểu nhưng phải rèn luyện cao.</p>
+            </div>
+            <div class="khac">
+                <h2>5. ...</h2>
+                <p>...</p>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <h6>Nguyễn Anh Tấn</h6><h6>Lớp:CD-CNTT15A</h6>
+            </div>
+            <div class="iconfooter">
+                <a href="https://www.facebook.com/profile.php?id=100071134597067"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/hoasimewcon/"><i class="fa-brands fa-instagram-square"></i></a>
+                <a href="https://www.tiktok.com/@userec9l25poyj"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/channel/UCElXAHf-s2fOmQbuRS7Y78Q"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </footer>
     </body>
-</html>      
+</html>
