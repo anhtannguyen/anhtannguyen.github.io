@@ -1,208 +1,145 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="trangtru.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-        <title>VIETLEARNING</title>
-        <link rel="icon" href="https://i.pinimg.com/236x/3c/25/fe/3c25fe16eeba1633e6fe3fc5e12b4445.jpg" width="200px">
-    </head>
-    <style>
-        *{
-            margin:0;
-            padding:0;
-        }
-        html{
-            font-size: 40px;
-        }
-        body{
-            background-image: url(https://i.pinimg.com/564x/3c/75/7c/3c757c81f3ae2a03ea66eb783a90943d.jpg);
-            background-repeat: no-repeat;
-            background-color: rgb(31, 44, 46);
-            background-size:100%;
-            background-attachment: fixed;
-            background-position: 0 180;
-        }
-        .headerclock{
-            position:fixed;
-            right:0;
-            left: 0;
-        }
-        header{
-            background-color: rgba(33,33,33);
-            padding:50px;
-            outline:none;
-            border-bottom: 5px solid black;
-        }
-        h3{
-            text-transform: uppercase;
-            text-align:  center;
-            font-size: 50px;
-            color:rgba(10,10,10,1);
-        }
-        .icon{
-            overflow: hidden;
-            border:0px solid white;
-            float:right;
-            width:1300;
-            align-content: center;
-            margin-top:35;
-            display: flex;
-            justify-content: space-evenly;
-        }
-        .img{
-            position: relative;
-            width:200px;
-            height:200px;
-            padding:53px;
-        }
-        img{
-            width:100%;
-            height:100%;
-            box-sizing: border-box;
-            border:4px solid black;
-            border-radius:10%;
-        }
-        .vietlearning{
-            width: 1500px;
-            margin-left:2cm;
-            font-size: 0.7em;
-        }
-        .vietlearninglagi{
-            padding-top:350px;
-        }
-        
-        h2{
-            margin-bottom:1cm;
-            text-decoration-line: underline;
-        }
-        p{
-            border-radius: 10px;
-            box-sizing: border-box;
-            border:2px solid black;
-            text-indent: 1cm;
-            margin-left: 1cm;
-            margin-right: 2cm;
-            margin-bottom:0.2cm;
-            padding:0.2cm;
-            transition: 1s;
-        }
-        p:hover{
-            background-color:rgba(93, 233, 198, 0.349);
-            border:2.1px solid white;
-        }
-        button{
-            border:none;
-            outline: none;
-            font-size:1rem;
-            width:200;
-            height:60;
-            text-align: center;
-            transition: 0.5s;
-            background-color: rgba(0,0,0,0);
-        }
-        button:hover{
-            border-radius: 20px;
-            border:2px solid white;
-            color: black;
-        }
-        .navar{
-            background-size: cover ;
-            background-image: url(https://i.pinimg.com/564x/3c/75/7c/3c757c81f3ae2a03ea66eb783a90943d.jpg);
-            padding:70px;
-        }
-        footer{
-            display:flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: rgb(33,33,33);
-            border-top:3px solid black;
-        }
-        .iconfooter{
-        }
-        .fa-brands{
-            padding:5px;
-            margin-left:10px;
-            cursor: pointer;
-            justify-content:center;
-            align-items:center;
-            color:black;
-            transition:0.4s;
-        }
-        .fa-brands:hover{
-            border:1px solid white;
-            border-radius: 5px;
-            background-color:rgba(33,33,33);
-            color:black;
-            transition: 0.1s;
-        }
-    </style>
-    <body>
-        <div class="headerclock">
-            <header>    
-                <h3>VietLearning</h3>
-            </header>
-            <div class="icon">
-                <form action="https://anhtannguyen.github.io/">
-                    <button>Trang chủ</button>
-                </form>
-                <form action="https://anhtannguyen.github.io/thongtin1/">
-                    <button>Thông tin</button>
-                </form>
-                <form action="https://anhtannguyen.github.io/hoatdong/">
-                    <button>Hoạt động</button>
-                </form>
-                <form action>
-                    <button>Thú cưng</button>
-                </form>
-            </div>
-            <div class="navar"></div>
-        </div>
-        <div style="position:fixed" class="img">
-            <img src="https://i.pinimg.com/236x/cd/4c/8b/cd4c8ba49236d274d7089674598c1c19.jpg">
-        </div>
-        <div class="vietlearning">
-            <div class="vietlearninglagi">
-                <h2>1.VietLearning là gì ?</h2>
-                <p>VietLearning là một trung tâm công tác xã hôi với những anh chị vô cùng nhiệt tình và thân thiện với công những công việc cứu trợ thú nuôi cơ nhỡ.Đây còn là một trung tâm dạy học tiếng Anh do Ms.Duyên và Mr.Khoa dạy.Hằng tháng trung tâm sẽ tố chức các buổi kỹ năng sống hướng về mục tiêu bảo vệ môi trường.</p>
-            </div>
-            <div class="cuutrodongvat">
-                <h2>2.Cứu trợ động vật cơ nhỡ.</h2>
-                <p>Trung tâm thường cứu trợ các bạn chó mèo bị bỏ rơi,bị bệnh hay không có ai người nhận nuôi.Lúc trước mình nghĩ,đây chỉ là một công việc để làm tâm mình thấy tốt hơn nhưng đến khi có một người giải thích việc làm cứu những bạn chó mèo này cao cả như nào.
-                    Đây là một câu chuyện về ý nghĩa đó.
-                    Mr.K nhặt được một bạn chó mắc carry ( bệnh này thường là sẽ chết hoặc sẽ để di chứng đông kinh ).Khi nhắc về điều mà tôi thấy đó là một chú chó lông trắng và vô yếu ớt,xung quanh chỗ nào cũng lồi xương.
-                    Nó dậy dụa,nó sợ hãi con người,nó hú lên.Chó trắng được nhắc về và qua ngày hôm sau nó đã mất.
-                    Mr.K nói rằng” Sống chết tại số mình không thể nào tránh được nhưng ít ra mình cũng đã cho nó một khoảng thời gian cuối đời êm ái và không có sự sợ hãi.Việc nó dẫy dụa,hú là nó đang sả stress căng thẳng khi trước đây nó luôn ngoài đường giữa dòng xe cộ nó sợ hãi hoảng mang.Lúc cuối đời nó có 1 nơi để nằm nghỉ,một ngồi nhà ấm áp và không có tiếng xe cộ đã là điều tốt nhất mà mình có thể làm cho nó “
-                    </p>
-            </div>
-            <div class="kynangsong">
-                <h2>3.Các chương trình kỹ năng sống.</h2>
-                <p>Tuần lễ xanh: Nuôi trồng cây xanh.
-                    Các buổi tham quan bảo tang lịch sử cho các em nhỏ.
-                    Nói không với ni-long dung 1 lần.
-                    Các khóa dạy bơi.
-                    …(vân vân và mây mây.Tại nhiều quá mình không nhớ rõ lắm)
-                    </p>
-            </div>
-            <div class="tienganh">
-                <h2>4.Dạy học tiếng Anh</h2>
-                <p>Dạy học thêm cho cả học sinh lẫn người đi làm.Hiên tại thì mình đang theo học chương trình “ English for life”.Dễ hiểu nhưng phải rèn luyện cao.</p>
-            </div>
-            <div class="khac">
-                <h2>5. ...</h2>
-                <p>...</p>
-            </div>
-        </div>
-        <footer>
-            <div class="footer">
-                <h6>Nguyễn Anh Tấn</h6><h6>Lớp:CD-CNTT15A</h6>
-            </div>
-            <div class="iconfooter">
-                <a href="https://www.facebook.com/profile.php?id=100071134597067"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/hoasimewcon/"><i class="fa-brands fa-instagram-square"></i></a>
-                <a href="https://www.tiktok.com/@userec9l25poyj"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://www.youtube.com/channel/UCElXAHf-s2fOmQbuRS7Y78Q"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-        </footer>
-    </body>
+<head>
+ <meta charset="UTF-8">
+ <title>BÀI THI LẦN 1</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="icon" href="https://i.pinimg.com/236x/02/1d/76/021d769efdf79c04ba951e782a4ab105.jpg">
+</head>
+<style>
+    body{
+        background-image: url(https://i.pinimg.com/236x/93/aa/45/93aa459bc6aaae18bfd4bc2129b1af41.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size:100%;
+    }
+        table{
+    margin:0 auto;
+    background-color: rgb(0,80,89);
+    }
+    .cot{
+    border: none;
+    width: 100px;
+    }
+    #btnXeploai{
+    margin-left: 620px;
+    margin-top: 50px;
+    }
+    #table1{
+        width:240px;
+        height:200px;
+    }
+    .click{
+        position:absolute;
+        background-color: rgba(0, 80, 89, 1);
+        width:340px;
+        height:50px;
+        border-radius: 4px;
+    }
+    #diem1{
+        width:150px;
+        height:20px;
+    }
+    #diem2{
+        width:150px;
+        height:20px;
+    }
+    #dtb{
+        width:150px;
+        height:20px;
+    }
+</style>
+<body>
+    
+<h1 align='center' style="color:red">BÀI THI LẦN 1</h1>
+ <table border='1' cellpadding="0" cellspacing="30px">
+   <tr class="dong">
+    <td class="cot">Toán</td>
+    <td class="cot">
+     <input type='text' value="" name='diem1' id='diem1' placeholder="Nhập điểm toán" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nhập điểm TB HK1'"/>
+    </td>
+   </tr>
+   <tr class="dong">
+    <td class="cot">Văn</td>
+    <td class="cot">
+     <input type='text' value="" name='diem2' id='diem2' placeholder="Nhập điểm văn" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nhập điểm TB HK2'"/>
+    </td>
+   </tr>
+ <tr class="dong">
+    <td class="cot">hạnh kiểm</td>
+    <td class="cot">
+    <input type="radio" name="gender" value="male" checked>đạt<br>
+    <input type="radio" name="gender" value="female"> không đạt<br>
+    </td>
+ </tr>
+   <tr class="dong">
+    <td class="cot">Điểm TB</td>
+    <td class="cot">
+     <input type='text' value="" name='dtb' id='dtb'/>
+    </td>
+   </tr>
+   <table class="list" id="employeeList">
+   <tr class="dong">
+    <td id="table1" class="cot"></td>
+    <td class="cot" ><label id='xeploai' style="font-weight: bold;color:black;font-size: 40px;"></label>
+     </table>
+    </td>
+   </tr>
+   <tr class="dong">
+    <td colspan='2' class="cot">
+     <input type="button" class="click" value='Cick' name="btnXeploai" id='btnXeploai' onclick="dtb.value=Tinhdiemtb()" />
+    </td>
+   </tr> 
+ </table>
+ <script>
+    function Tinhdiemtb()
+{
+ var x1=document.getElementById('diem1');
+ var x2=document.getElementById('diem2');
+ if(x1.value=='' && x2.value=='')
+ {
+  alert('Bạn đã nhập thiếu giá trị vào ô nhập liệu');
+  }
+ else if(x1.value=='')
+ {
+  alert('Bạn đã nhập thiếu giá trị ô nhập liệu thứ 1');
+ }
+ else if(x2.value=='')
+ {
+  alert('Bạn đã nhập thiếu giá trị ô nhập liệu thứ 2');
+ }
+ else if(isNaN(x1.value)&&isNaN(x2.value))
+ {
+  alert('Kí tự bạn nhập không phải là số');  
+ }
+ else if(isNaN(x1.value) )
+ {
+  alert('Kí tự bạn nhập không phải là số');  
+ }
+  else if(isNaN(x2.value))
+ {
+  alert('Kí tự bạn nhập không phải là số');  
+ }
+ var checkbox = document.getElementsByName("gender");
+ var tb=document.getElementById('dtb');
+ tb=(parseFloat(x1.value)+parseFloat(x2.value)*2)/3;
+ var tbfix=tb.toFixed(2);//Lấy 2 số thập phân sau dấu phẩy và làm tròn
+ var xltb=document.getElementById('xeploai');
+ if(tbfix>=8)
+ {
+  xltb.innerText='Lên lớp';
+ }
+ else if(tbfix>=6.5)
+ {
+  xltb.innerText='Lên lớp';
+ }
+ else if(tbfix>=5)
+ {
+  xltb.innerText='Lên lớp';
+ }
+ else xltb.innerText='Thi lại';
+ return tbfix;
+}
+ </script>
+</body>
 </html>
