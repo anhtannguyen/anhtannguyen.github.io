@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sở thích</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="JavaScritp.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,6 +12,9 @@
     *{
         margin:0;
         padding:0;
+    }
+    title{
+        text-transform: uppercase;
     }
     html{
         font-family: 'Times New Roman', Times, serif;
@@ -88,10 +91,16 @@
         width:100%;
         height: 50px;
         border-bottom: 2px black solid;
-
+        text-transform: uppercase;/*Viết Hoa tất cả chữ*/
+        
     }
     .number{
         color: #020202;
+    }
+    a{
+        color: (internal value);
+        text-decoration:none;/* hủy viền gạch dưới chân chỗ hiện thị bấm link */
+        cursor: auto;/* chọn con trỏ */
     }
 </style>
 <body>
@@ -100,36 +109,36 @@
             <h3>nguyễn anh tấn</h3>
         </div>
     </header>
-    <ul>
-        <li>
+    <ul><a href="https://www.youtube.com/watch?v=viUmIJPuhTQ">
+        <li >
             <span class="number">1</span>
             <span class="name">Âm nhạc</span>
             <span class="points">80</span>
-            <span class="badge"><i class="fa-solid fa-user" style="color: #44511f;"></i></span>
-        </li>
+            <span class="badge"><i class="fa-solid fa-headphones"></i></span>
+        </li></a>
         <li>
             <span class="number">2</span>
             <span class="name">Kiến thức</span>
             <span class="points">85</span>
-            <span class="badge"><i class="fa-solid fa-user" style="color: #44511f;"></i></span>
+            <span class="badge"><i class="fa-solid fa-book"></i></span>
         </li>
         <li>
             <span class="number">3</span>
             <span class="name">Hình ảnh</span>
             <span class="points">90</span>
-            <span class="badge"><i class="fa-solid fa-user" style="color: #44511f;"></i></span>
+            <span class="badge"><i class="fa-solid fa-image"></i></span>
         </li>
         <li>
             <span class="number">4</span>
             <span class="name">Trang xã hội</span>
             <span class="points">95</span>
-            <span class="badge"><i class="fa-solid fa-user" style="color: #44511f;"></i></span>
+            <span class="badge"><i class="fa-sharp fa-solid fa-globe"></i></span>
         </li>
         <li>
             <span class="number">5</span>
             <span class="name"> Baymax</span>
             <span class="points">100</span>
-            <span class="badge" ><i class="fa-solid fa-user" style="color: #44511f;"></i></span>
+            <span class="badge" ><i class="fa-solid fa-user-nurse"></i></span>
         </li>
     </ul>
 </body>
